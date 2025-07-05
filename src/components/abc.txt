@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upcoming Community Trips</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    .community-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .community-header h2 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .view-all {
+      text-decoration: none;
+      color: #007b8f;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.3s ease;
+    }
+
+    .view-all:hover {
+      color: #005f6b;
+    }
+
+    .arrow {
+      font-size: 18px;
+    }
+
+    .date-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .date-btn {
+      padding: 10px 16px;
+      background: #e0e0e0;
+      border: none;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .date-btn.active,
+    .date-btn:hover {
+      background: #00b4d8;
+      color: #fff;
+    }
+
+    .trip-packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .trip-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .trip-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .trip-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .trip-card::before {
+      content: attr(data-price);
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background-color: #ffe600;
+      color: #222;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      z-index: 2;
+    }
+
+    .trip-details {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      color: #fff;
+      padding: 16px;
+    }
+
+    .trip-details h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .trip-details p {
+      font-size: 14px;
+      margin: 2px 0;
+      color: #ddd;
+    }
+
+    @media (max-width: 480px) {
+      .trip-card img {
+        height: 220px;
+      }
+
+      .trip-details h3 {
+        font-size: 16px;
+      }
+
+      .trip-details p {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="community-header">
+    <h2>Upcoming Community Trips</h2>
+    <a href="/upcoming-community-trips" class="view-all">
+      View All <span class="arrow">&gt;</span>
+    </a>
+  </div>
+
+  <div class="date-buttons">
+    <button class="date-btn active" data-month="dec">DEC '25</button>
+    <button class="date-btn" data-month="nov">NOV '25</button>
+    <button class="date-btn" data-month="oct">OCT '25</button>
+    <button class="date-btn" data-month="sep">SEP '25</button>
+    <button class="date-btn" data-month="aug">AUG '25</button>
+    <button class="date-btn" data-month="jul">JUL '25</button>
+  </div>
+
+  <div class="trip-packages">
+    <div class="trip-card" data-month="dec" data-price="₹17,999/- Onwards">
+      <img src="../assets/spiti.webp" alt="Spiti Backpacking" />
+      <div class="trip-details">
+        <h3>Spiti Backpacking - Bliss in Budget</h3>
+        <p>6N/7D</p>
+        <p>Delhi - Delhi</p>
+        <p>6 Dec, 13 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="dec" data-price="₹17,999/- Onwards">
+      <img src="../assets/spiti.webp" alt="Spiti Backpacking" />
+      <div class="trip-details">
+        <h3>Spiti Backpacking - Bliss in Budget</h3>
+        <p>6N/7D</p>
+        <p>Delhi - Delhi</p>
+        <p>6 Dec, 13 Dec</p>
+      </div>
+    </div>
+    
+    <div class="trip-card" data-month="dec" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="dec" data-price="₹1,44,990/- Onwards">
+      <img src="../assets/andaman.webp" alt="European Trails" />
+      <div class="trip-details">
+        <h3>8 Days European Trails Community Trip</h3>
+        <p>7N/8D</p>
+        <p>Amsterdam - Prague</p>
+        <p>25 Dec</p>
+      </div>
+    </div>
+
+
+    <!-- nov -->
+     <div class="trip-card" data-month="nov" data-price="₹17,999/- Onwards">
+      <img src="../assets/spiti.webp" alt="Spiti Backpacking" />
+      <div class="trip-details">
+        <h3>Spiti Backpacking - Bliss in Budget</h3>
+        <p>6N/7D</p>
+        <p>Delhi - Delhi</p>
+        <p>6 Dec, 13 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="nov" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="nov" data-price="₹1,44,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Trails" />
+      <div class="trip-details">
+        <h3>8 Days European Trails Community Trip</h3>
+        <p>7N/8D</p>
+        <p>Amsterdam - Prague</p>
+        <p>25 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="nov" data-price="₹1,44,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Trails" />
+      <div class="trip-details">
+        <h3>8 Days European Trails Community Trip</h3>
+        <p>7N/8D</p>
+        <p>Amsterdam - Prague</p>
+        <p>25 Dec</p>
+      </div>
+    </div>
+
+
+    <!-- oct -->
+
+    <div class="trip-card" data-month="oct" data-price="₹17,999/- Onwards">
+      <img src="../assets/spiti.webp" alt="Spiti Backpacking" />
+      <div class="trip-details">
+        <h3>Spiti Backpacking - Bliss in Budget</h3>
+        <p>6N/7D</p>
+        <p>Delhi - Delhi</p>
+        <p>6 Dec, 13 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="oct" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+
+    <div class="trip-card" data-month="oct" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="oct" data-price="₹1,44,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Trails" />
+      <div class="trip-details">
+        <h3>8 Days European Trails Community Trip</h3>
+        <p>7N/8D</p>
+        <p>Amsterdam - Prague</p>
+        <p>25 Dec</p>
+      </div>
+    </div>
+
+
+    <!-- sep -->
+     <div class="trip-card" data-month="sep" data-price="₹17,999/- Onwards">
+      <img src="../assets/spiti.webp" alt="Spiti Backpacking" />
+      <div class="trip-details">
+        <h3>Spiti Backpacking - Bliss in Budget</h3>
+        <p>6N/7D</p>
+        <p>Delhi - Delhi</p>
+        <p>6 Dec, 13 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="sep" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+
+    <div class="trip-card" data-month="sep" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="sep" data-price="₹1,44,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Trails" />
+      <div class="trip-details">
+        <h3>8 Days European Trails Community Trip</h3>
+        <p>7N/8D</p>
+        <p>Amsterdam - Prague</p>
+        <p>25 Dec</p>
+      </div>
+    </div>
+
+    <!-- aug -->
+     <div class="trip-card" data-month="aug" data-price="₹17,999/- Onwards">
+      <img src="../assets/spiti.webp" alt="Spiti Backpacking" />
+      <div class="trip-details">
+        <h3>Spiti Backpacking - Bliss in Budget</h3>
+        <p>6N/7D</p>
+        <p>Delhi - Delhi</p>
+        <p>6 Dec, 13 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="aug" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+
+    <div class="trip-card" data-month="aug" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="aug" data-price="₹1,44,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Trails" />
+      <div class="trip-details">
+        <h3>8 Days European Trails Community Trip</h3>
+        <p>7N/8D</p>
+        <p>Amsterdam - Prague</p>
+        <p>25 Dec</p>
+      </div>
+    </div>
+    
+
+    <!-- july -->
+     <div class="trip-card" data-month="jul" data-price="₹17,999/- Onwards">
+      <img src="../assets/spiti.webp" alt="Spiti Backpacking" />
+      <div class="trip-details">
+        <h3>Spiti Backpacking - Bliss in Budget</h3>
+        <p>6N/7D</p>
+        <p>Delhi - Delhi</p>
+        <p>6 Dec, 13 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="jul" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+
+    <div class="trip-card" data-month="jul" data-price="₹1,69,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Pathways" />
+      <div class="trip-details">
+        <h3>11 Days European Pathways Community Trip</h3>
+        <p>10N/11D</p>
+        <p>Paris - Prague</p>
+        <p>22 Dec</p>
+      </div>
+    </div>
+
+    <div class="trip-card" data-month="jul" data-price="₹1,44,990/- Onwards">
+      <img src="../assets/spiti.webp" alt="European Trails" />
+      <div class="trip-details">
+        <h3>8 Days European Trails Community Trip</h3>
+        <p>7N/8D</p>
+        <p>Amsterdam - Prague</p>
+        <p>25 Dec</p>
+      </div>
+    </div>
+      
+
+  </div>
+
+  <script>
+  const buttons = document.querySelectorAll('.date-btn');
+  const cards = document.querySelectorAll('.trip-card');
+
+  function filterTrips(month) {
+    cards.forEach(card => {
+      const cardMonth = card.getAttribute('data-month');
+      card.style.display = cardMonth === month ? 'block' : 'none';
+    });
+  }
+
+  // Initial load: filter by the active button's month
+  const defaultActive = document.querySelector('.date-btn.active');
+  if (defaultActive) {
+    filterTrips(defaultActive.getAttribute('data-month'));
+  }
+
+  // Add click event listeners
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      filterTrips(button.getAttribute('data-month'));
+    });
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import BodyContent from "./components/BodyContent";
+import ReviewBadges from "./components/ReviewBadges";
+import BannerSection from "./components/BannerSection";
+import UpcomingTrips from "./components/UpcomingTrips";
+import ContactForm from "./components/ContactForm";
+// import RomanticEscapesBanner from "./components/RomanticEscapesBanner";
+import WanderOnBenefitsPage from "./components/WanderOnBenefitsPage";
+import Footer from "./components/Footer";
+import JourneyCarousel from "./components/JourneyCarousel";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Navbar />
+      <BodyContent />
+      <ReviewBadges />
+      <BannerSection />
+      <UpcomingTrips />
+      {/* <RomanticEscapesBanner /> */}
+      <WanderOnBenefitsPage />
+      <JourneyCarousel />
+      <ContactForm />
+      <Footer />
+      {/* <Test/> */}
+      
+      {/* <ReviewBadges /> */}
+      {/* <BannerSection /> */}
+      {/* <InternationalBanner /> */}
+      
     </div>
   );
 }
 
 export default App;
+
