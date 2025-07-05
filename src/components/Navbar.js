@@ -129,12 +129,28 @@ import downArrowIcon from '../assets/down-chevron.svg';
 import giftIcon from '../assets/gift.webp';
 import menuIcon from '../assets/menu.svg'; // Add a hamburger icon
 import closeIcon from '../assets/close.svg'; // Add a close icon
+import logo from '../assets/logo.png'; // Add your logo image
+import { FaPhoneAlt } from 'react-icons/fa';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="navbar">
+      
+        <div className="logo">
+          <img src={logo} alt="Wanderon Logo" />
+        </div>
+        
+      
+      <div className="nav-middle-content">
+        <a href="tel:+919090403075" className="nav-call-button">
+          <FaPhoneAlt /> +91-9090403075
+        </a>
+      </div>
+      
+
       <div className="nav-header">
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <img src={menuOpen ? closeIcon : menuIcon} alt="Menu" />

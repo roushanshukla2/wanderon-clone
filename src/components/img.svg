@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #2e7d32; }
+    .brand { font: bold 24px sans-serif; fill: #66bb6a; }
+    .tagline { font: 14px sans-serif; fill: #a5d6a7; }
+  </style>
+  <text x="10" y="40" class="title">TOUR</text>
+  <text x="100" y="40" class="brand">PICKKARS</text>
+  <text x="10" y="70" class="tagline">Helping People Make Memories</text>
+</svg>

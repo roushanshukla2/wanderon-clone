@@ -1,7 +1,7 @@
 
 import React from "react";
 import "../styles/Header.css";
-import logo from "../assets/wanderon-logo.png";
+import logo from "../assets/logo.png";
 import { FaSearch, FaCalendarAlt, FaPhoneAlt } from "react-icons/fa";
 
 const Header = () => {
@@ -30,10 +30,10 @@ const Header = () => {
           <a href="about-us">About Us</a>
           <a href="payment">Payments</a>
         </nav>
-
         <a href="tel:+919090403075" className="call-button">
           <FaPhoneAlt /> +91-9090403075
         </a>
+
       </div>
     </header>
   );
