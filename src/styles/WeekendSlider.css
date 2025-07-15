@@ -1,0 +1,111 @@
+.weekend-getaway-slider-wrapper {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.weekend-getaway-slider-wrapper h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  will-change: transform;
+  cursor: grab;
+}
+
+.weekend-slider-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.weekend-slider-card img {
+  width: 64px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.weekend-slider-card p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.arrow:hover {
+  background: #bbb;
+}
+
+.arrow.prev {
+  left: 10px;
+}
+
+.arrow.next {
+  right: 10px;
+}
+
+.dots {
+  margin-top: 20px;
+}
+
+.dots span {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background-color: #333;
+}
+
+@media (min-width: 800px) {
+  .slider-track {
+    transform: translateX(0) !important;
+    cursor: default;
+  }
+
+  .weekend-slider-card {
+    min-width: calc(100% / 3);
+  }
+
+  .arrow,
+  .dots {
+    display: none;
+  }
+}

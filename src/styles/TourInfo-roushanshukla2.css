@@ -1,0 +1,182 @@
+/* About Section */
+.about-international-tours-wrapper {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  border-left: 6px solid yellow;
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.read-more-toggle {
+  color: #ffe600;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.read-more-toggle.right-align {
+  display: block;
+  text-align: right;
+}
+
+.extra-content {
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.read-more-toggle:hover {
+  text-decoration: underline;
+}
+
+/* Section Titles */
+.tour-render-activities-section,
+.tour-render-places-section,
+.tour-render-culinary-section,
+.tour-render-shopping-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tour-render-activities-section h2,
+.tour-render-places-section h2,
+.tour-render-culinary-section h2,
+.tour-render-shopping-section h2 {
+  font-size: 28px;
+  color: #004b6b;
+  margin-bottom: 10px;
+}
+
+.tour-render-activities-section p,
+.tour-render-places-section p,
+.tour-render-culinary-section p,
+.tour-render-shopping-section p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Common Carousel Styles */
+.tour-render-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-render-carousel-inner {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  flex: 1;
+  justify-content: center;
+}
+
+.tour-render-activity-card,
+.tour-render-place-card,
+.tour-render-culinary-card,
+.tour-render-shopping-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s;
+}
+
+.tour-render-activity-card img,
+.tour-render-place-card img,
+.tour-render-culinary-card img,
+.tour-render-shopping-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.tour-render-activity-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  /* background: rgba(0, 0, 0, 0.75); */
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-align: left;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.tour-render-card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Carousel Arrow Buttons */
+.tour-render-carousel-arrow {
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: none;
+}
+
+.tour-render-carousel-arrow:hover {
+  background: #0097a7;
+}
+
+.tour-render-carousel-arrow.left {
+  margin-right: 10px;
+}
+
+.tour-render-carousel-arrow.right {
+  margin-left: 10px;
+}
+
+/* Tag for Shopping Categories */
+.tour-render-category-tag {
+  display: inline-block;
+  background: #00bcd4;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 4px;
+}
+
+/* Responsive Carousel */
+@media (max-width: 768px) {
+  .tour-render-carousel-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}

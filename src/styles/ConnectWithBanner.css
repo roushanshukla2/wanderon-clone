@@ -1,0 +1,198 @@
+/* ======= BACKGROUND SECTION ======= */
+.connect-banner-wrapper {
+  background: url('../assets/cta-banner2.webp') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+    margin-bottom: 30px;
+}
+
+.connect-banner {
+  background-color: rgba(0, 71, 102, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+}
+
+.connect-banner h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.connect-banner p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.connect-banner button {
+  background-color: #ffd700;
+  color: black;
+  font-weight: bold;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.connect-banner button:hover {
+  background-color: #ffcc00;
+}
+
+/* ======= MODAL STYLES ======= */
+.modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; /* Make it visible when rendered */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: #e0f7ff;
+  width: 100%;
+  max-width: 850px;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-left,
+.modal-right {
+  flex: 1 1 400px;
+  padding: 30px;
+}
+
+.modal-left {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal-left img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modal-left h2 {
+  font-size: 22px;
+  color: #004d66;
+  margin-bottom: 10px;
+}
+
+.modal-left p {
+  font-size: 15px;
+  color: #333;
+}
+
+.modal-right {
+  background-color: #ccf2ff;
+}
+
+.modal-right label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+  color: #004d66;
+}
+
+.modal-right input,
+.modal-right textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.modal-right textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.submit-btn {
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #ffcc00;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 823px) {
+  .modal-left,
+  .modal-right {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .modal-left h2 {
+    font-size: 20px;
+  }
+
+  .connect-banner {
+    padding: 20px;
+  }
+
+  .connect-banner h2 {
+    font-size: 20px;
+  }
+
+  .modal-left img {
+    display: none;
+  }
+}

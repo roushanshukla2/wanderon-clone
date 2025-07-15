@@ -1,0 +1,123 @@
+
+.honeymoon-quick-safe-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.honeymoon-quick-safe-header {
+  width: 100%;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+}
+
+.honeymoon-quick-safe-header p {
+  color: #f9b420;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.honeymoon-quick-safe-header h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.yellow-line {
+  width: 60px;
+  height: 4px;
+  background-color: #f9b420;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.quick-safe-left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.left-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.left-card:hover {
+  transform: translateY(-5px);
+}
+
+.quick-safe-icon-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.quick-safe-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.quick-safe-text-container p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.quick-safe-right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quick-safe-right-section img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 📱 Responsive: Stack Layout for Mobile */
+@media (max-width: 768px) {
+  .honeymoon-quick-safe-wrapper {
+    flex-direction: column;
+  }
+    .quick-safe-left-section {
+        order: 2; /* Push text to bottom */
+    }
+
+  .quick-safe-right-section {
+    order: 1    ; /* Push image to top */
+    margin-bottom: 1.5rem;
+  }
+
+  .honeymoon-quick-safe-header h3 {
+    font-size: 1.5rem;
+
+  }
+
+  .quick-safe-heading {
+    font-size: 1.1rem;
+    order: 0;
+  }
+
+  .quick-safe-text-container p {
+    font-size: 0.9rem;
+  }
+}
+  .quick-safe-icon-container {
+    background: rgb(1, 175, 209);
+    padding: 15px;
+    border-radius: 20px;
+}
+    

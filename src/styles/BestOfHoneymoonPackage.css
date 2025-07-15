@@ -1,0 +1,167 @@
+
+        .honeymoon-slider-section {
+          padding: 40px 5%;
+          position: relative;
+        }
+
+        .honeymoon-slider-section h2 {
+          font-size: 42px;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 30px;
+          color: #2b2b2b;
+        }
+
+        .honeymoon-carousel-container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center  ;
+        }
+
+        .honeymoon-carousel-wrapper {
+          display: flex;
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          gap: 20px;
+          padding: 10px 0;
+          scroll-snap-type: x mandatory;
+        }
+
+        .honeymoon-carousel-wrapper::-webkit-scrollbar {
+          display: none;
+        }
+
+        .honeymoon-trip-card {
+          flex: 0 0 auto;
+          scroll-snap-align: start;
+          width: 350px;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 0 15px rgba(0,0,0,0.1);
+          overflow: hidden;
+          position: relative;
+          transition: transform 0.3s;
+        }
+
+        .honeymoon-trip-card:hover {
+          transform: translateY(-6px);
+        }
+
+        .honeymoon-trip-card img {
+          width: 100%;
+          height: 220px;
+          object-fit: cover;
+        }
+
+        .honeymoon-customised-tag {
+          position: absolute;
+          top: 185px;
+          left: 15px;
+          background: #ffc107;
+          padding: 4px 10px;
+          border-radius: 4px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #333;
+          text-decoration: none;
+          cursor: pointer;
+          z-index: 5;
+          display: inline-block;
+          user-select: none;
+        }
+
+        .honeymoon-customised-tag:hover {
+          background: #ffca28;
+        }
+
+        .honeymoon-trip-info {
+          padding: 16px;
+        }
+
+        .honeymoon-trip-info h3 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          color: #222;
+        }
+
+        .honeymoon-trip-meta {
+          font-size: 14px;
+          color: #555;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-bottom: 16px;
+        }
+
+        .honeymoon-trip-meta span {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .honeymoon-trip-meta img {
+          height: 18px;
+          width: 18px;
+          object-fit: contain;
+          vertical-align: middle;
+        }
+
+        .honeymoon-view-btn {
+          display: block;
+          width: 100%;
+          background: #ff5a5f;
+          color: white;
+          text-align: center;
+          padding: 12px;
+          border-radius: 6px;
+          font-weight: 600;
+          text-decoration: none;
+          transition: background 0.3s;
+        }
+
+        .honeymoon-view-btn:hover {
+          background: #e0464a;
+        }
+
+        .honeymoon-nav-button {
+          background: #fff;
+          border: 2px solid #ddd;
+          color: #333;
+          font-size: 24px;
+          border-radius: 50%;
+          cursor: pointer;
+          width: 44px;
+          height: 44px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+          transition: background 0.3s;
+          z-index: 10;
+        }
+
+        .honeymoon-nav-button:hover {
+          background: #f0f0f0;
+        }
+
+        .honeymoon-nav-left {
+          margin-right: 10px;
+        }
+
+        .honeymoon-nav-right {
+          margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+          .honeymoon-trip-card {
+            width: 280px;
+          }
+
+          .honeymoon-slider-section h2 {
+            font-size: 28px;
+          }
+
+          .honeymoon-nav-button {
+            display: none;
+          }
+        }
+      

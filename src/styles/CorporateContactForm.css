@@ -1,0 +1,133 @@
+
+    /* Wrapper and Card Layout */
+    .corporate-form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10% 32px;
+      background-color: #f9f9f9;
+      min-height: 250px;
+    }
+
+    .corporate-form-card {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .corporate-form-card {
+        flex-direction: row;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 767px) {
+      .corporate-form-display-hidden {
+        display: none;
+      }
+
+      .corporate-form-illustration {
+        padding: 10px !important;
+        align-items: normal !important;
+      }
+    }
+
+    /* Illustration Section */
+    .corporate-form-illustration {
+      flex: 1;
+      background-color: #eaf9fc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 0px 81px;
+      text-align: center;
+    }
+
+    .corporate-form-illustration h2 {
+      font-size: 2rem;
+      color: #01afd1;
+      margin-bottom: 10px;
+    }
+
+    .corporate-form-illustration p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .corporate-form-illustration img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* Form Section */
+    .corporate-form-form-wrapper {
+      flex: 1;
+      padding: 30px 20px;
+    }
+
+    /* Form Fields */
+    .corporate-form-group {
+      margin-bottom: 20px;
+    }
+
+    .corporate-form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .corporate-form-group input,
+    .corporate-form-group textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.3s;
+    }
+
+    .corporate-form-group input:focus,
+    .corporate-form-group textarea:focus {
+      border-color: #01afd1;
+      outline: none;
+    }
+
+    .corporate-form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    /* Error Text */
+    .corporate-form-error-text {
+      color: #d9534f;
+      font-size: 0.875rem;
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* Submit Button */
+    .corporate-form-submit-btn {
+      background-color: #ffdf00;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .corporate-form-submit-btn:hover {
+      background-color: #e6c900;
+    }

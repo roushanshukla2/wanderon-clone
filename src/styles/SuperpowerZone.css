@@ -1,0 +1,69 @@
+.superpower-container {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.superpower-content-heading h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.superpower-content-heading h2 strong,
+.superpower-content-heading h2 .highlight {
+  font-weight: 700;
+}
+
+.superpower-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.superpower-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.superpower-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.superpower-card-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.superpower-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.superpower-card-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .superpower-content-heading h2 {
+    font-size: 2rem;
+  }
+
+  .superpower-card {
+    padding: 20px 15px;
+  }
+
+  .superpower-card-container {
+    grid-template-columns: 1fr;
+  }
+}

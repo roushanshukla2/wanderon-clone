@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Testimonial Carousel</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    .corporate-carousel-wrapper {
+      padding: 80px 20px;
+      background-image: url(../assets/corporate-review-bg.svg);
+      background-size: cover;
+    }
+
+    .carousel-container {
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .corporate-carousel-track {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      padding: 10px 0;
+    }
+
+    .corporate-carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .corporate-carousel-card {
+      background: white;
+      color: #000;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      transition: transform 0.3s ease;
+      width: 100%;
+      min-width: 280px;
+      max-width: 380px;
+    }
+
+    .corporate-carousel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .corporate-carousel-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .corporate-carousel-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .corporate-carousel-logo {
+      width: 50px;
+      height: 50px;
+      margin: 10px auto;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+
+    .corporate-carousel-name {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .corporate-carousel-role {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .corporate-carousel-quote {
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 15px;
+      line-height: 1.5;
+    }
+
+    .carousel-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    .carousel-btn {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .carousel-btn:hover {
+      background-color: #00b4d8;
+      color: white;
+    }
+
+    .corporate-carousel-dots span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+      background-color: #aaa;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .corporate-carousel-dots span.active {
+      background-color: #00819b;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-controls {
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="corporate-carousel-wrapper">
+  <div class="carousel-container">
+    <div class="corporate-carousel-track" id="carouselTrack">
+      <!-- Card Example -->
+      <div class="corporate-carousel-card">
+        <img src="https://images.wanderon.in/mice-images-collection/Reviews/review%201?updatedAt=1701845083666" class="corporate-carousel-image" />
+        <div class="corporate-carousel-content">
+          <img src="https://images.wanderon.in/mice-images-collection/our-clients/tvs1?updatedAt=1701068195949" class="corporate-carousel-logo" />
+          <div class="corporate-carousel-name">Varun Vairavan</div>
+          <div class="corporate-carousel-role">CTO | <b>HighLevel</b></div>
+          <div class="corporate-carousel-quote">Addressing the challenge of maintaining a cohesive remote culture is no easy feat...</div>
+        </div>
+      </div>
+
+      <div class="corporate-carousel-card">
+        <img src="https://images.wanderon.in/mice-images-collection/Reviews/review%201?updatedAt=1701845083666" class="corporate-carousel-image" />
+        <div class="corporate-carousel-content">
+          <img src="https://images.wanderon.in/mice-images-collection/our-clients/tvs1?updatedAt=1701068195949" class="corporate-carousel-logo" />
+          <div class="corporate-carousel-name">Varun Vairavan</div>
+          <div class="corporate-carousel-role">CTO | <b>HighLevel</b></div>
+          <div class="corporate-carousel-quote">Addressing the challenge of maintaining a cohesive remote culture is no easy feat...</div>
+        </div>
+      </div>
+
+      <div class="corporate-carousel-card">
+        <img src="https://images.wanderon.in/mice-images-collection/Reviews/review%201?updatedAt=1701845083666" class="corporate-carousel-image" />
+        <div class="corporate-carousel-content">
+          <img src="https://images.wanderon.in/mice-images-collection/our-clients/tvs1?updatedAt=1701068195949" class="corporate-carousel-logo" />
+          <div class="corporate-carousel-name">Varun Vairavan</div>
+          <div class="corporate-carousel-role">CTO | <b>HighLevel</b></div>
+          <div class="corporate-carousel-quote">Addressing the challenge of maintaining a cohesive remote culture is no easy feat...</div>
+        </div>
+      </div>
+
+
+      <div class="corporate-carousel-card">
+        <img src="https://images.wanderon.in/mice-images-collection/Reviews/review%201?updatedAt=1701845083666" class="corporate-carousel-image" />
+        <div class="corporate-carousel-content">
+          <img src="https://images.wanderon.in/mice-images-collection/our-clients/tvs1?updatedAt=1701068195949" class="corporate-carousel-logo" />
+          <div class="corporate-carousel-name">Varun Vairavan</div>
+          <div class="corporate-carousel-role">CTO | <b>HighLevel</b></div>
+          <div class="corporate-carousel-quote">Addressing the challenge of maintaining a cohesive remote culture is no easy feat...</div>
+        </div>
+      </div>
+
+
+      <div class="corporate-carousel-card">
+        <img src="https://images.wanderon.in/mice-images-collection/Reviews/review%201?updatedAt=1701845083666" class="corporate-carousel-image" />
+        <div class="corporate-carousel-content">
+          <img src="https://images.wanderon.in/mice-images-collection/our-clients/tvs1?updatedAt=1701068195949" class="corporate-carousel-logo" />
+          <div class="corporate-carousel-name">Varun Vairavan</div>
+          <div class="corporate-carousel-role">CTO | <b>HighLevel</b></div>
+          <div class="corporate-carousel-quote">Addressing the challenge of maintaining a cohesive remote culture is no easy feat...</div>
+        </div>
+      </div>
+
+      <!-- Duplicate the above card block to add more testimonials -->
+    </div>
+
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prevBtn">&#8592;</button>
+      <div class="corporate-carousel-dots" id="dotContainer"></div>
+      <button class="carousel-btn" id="nextBtn">&#8594;</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const track = document.getElementById('carouselTrack');
+  const dotsContainer = document.getElementById('dotContainer');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  let currentSlide = 0;
+
+  function getCardsPerView() {
+    const width = window.innerWidth;
+    if (width >= 993) return 3;
+    if (width >= 601) return 2;
+    return 1;
+  }
+
+  function updateDots(totalSlides) {
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('span');
+      dot.classList.toggle('active', i === currentSlide);
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function goToSlide(index) {
+    const container = document.querySelector('.carousel-container');
+    const scrollX = container.offsetWidth * index;
+    track.scrollTo({ left: scrollX, behavior: 'smooth' });
+
+    currentSlide = index;
+    [...dotsContainer.children].forEach((dot, i) =>
+      dot.classList.toggle('active', i === currentSlide)
+    );
+  }
+
+  function updateCarousel() {
+    const totalCards = document.querySelectorAll('.corporate-carousel-card').length;
+    const cardsPerView = getCardsPerView();
+    const totalSlides = Math.ceil(totalCards / cardsPerView);
+    currentSlide = 0;
+    updateDots(totalSlides);
+    goToSlide(0);
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (currentSlide > 0) goToSlide(currentSlide - 1);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const totalCards = document.querySelectorAll('.corporate-carousel-card').length;
+    const totalSlides = Math.ceil(totalCards / getCardsPerView());
+    if (currentSlide < totalSlides - 1) goToSlide(currentSlide + 1);
+  });
+
+  window.addEventListener('resize', updateCarousel);
+  window.addEventListener('load', updateCarousel);
+</script>
+
+</body>
+</html>

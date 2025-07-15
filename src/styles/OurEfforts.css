@@ -1,0 +1,35 @@
+    .story-wrapper {
+  padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  line-height: 1.6;
+  color: rgb(74, 74, 74);
+  background-color: #fff;
+}
+
+.story-wrapper h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #f9b420;
+}
+
+.story-wrapper p {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  font-weight: 400;
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .story-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .story-wrapper p {
+    text-align: left;
+  }
+}

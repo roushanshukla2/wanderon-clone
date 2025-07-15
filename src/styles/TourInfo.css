@@ -1,0 +1,48 @@
+
+
+.about-international-tours-wrapper {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  border-left: 6px solid yellow;
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.text-container a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more-toggle {
+  color: #ffe600;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.read-more-toggle.right-align {
+  display: block;
+  text-align: right;
+}
+
+.extra-content {
+  margin-top: 10px;
+}

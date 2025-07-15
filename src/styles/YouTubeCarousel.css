@@ -1,0 +1,104 @@
+ 
+      .carousel-wrapper-container {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+      }
+
+      .carousel-wrapper {
+        position: relative;
+        width: 600px;
+      }
+
+      .carousel-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+      }
+
+      .carousel-container::-webkit-scrollbar {
+        display: none;
+      }
+
+      .video-card {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        border: 1px solid #00b4d8;
+        border-radius: 8px;
+        overflow: hidden;
+        background: white;
+      }
+
+      .video-card iframe {
+        width: 100%;
+        height: 320px;
+        border: none;
+        display: block;
+      }
+
+      .video-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .video-title img {
+        width: 24px;
+      }
+
+      .nav-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #00b4d8;
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .nav-arrow.left {
+        left: -20px;
+      }
+
+      .nav-arrow.right {
+        right: -20px;
+      }
+
+      .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 6px;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #ccc;
+      }
+
+      .dot.active {
+        background: #00b4d8;
+      }
+    @media (max-width: 768px) {
+        .nav-arrow.left {
+        display: none;
+      }
+
+      .nav-arrow.right {
+        display: none;
+      }
+      }

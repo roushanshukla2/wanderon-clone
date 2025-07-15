@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MICE Tourism | WanderOn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .corporate-banner-wrapper {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .corporate-banner-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1100px;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .corporate-banner-container {
+      flex: 1 1 500px;
+    }
+
+    .corporate-heading-title {
+      font-size: 2.5rem;
+      line-height: 1.3;
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: #111;
+    }
+
+    .corporate-heading-title .highlight {
+      font-weight: 700;
+      color: #00b4d8;
+    }
+
+    .corporate-subheading {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .corporate-description-text p,
+    .corporate-description-text h2,
+    .corporate-description-text h3 {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #444;
+      max-width: 95%;
+    }
+
+    .read-more-button {
+      color: #00b4d8;
+      font-size: 0.85rem;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .corporate-video-section {
+      flex: 1 1 400px;
+    }
+
+    .corporate-video-frame {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .corporate-enquire-button-wrapper {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .corporate-enquire-button {
+      background-color: #ffd500;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .corporate-enquire-button:hover {
+      background-color: #ffbf00;
+    }
+
+    .additional-content {
+      display: none;
+    }
+
+    .expanded .additional-content {
+      display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+      .corporate-banner-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .corporate-heading-title {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .corporate-subheading {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="corporate-banner-wrapper">
+    <div class="corporate-banner-content">
+      <div class="corporate-banner-container">
+        <h2 class="corporate-heading-title">
+          <span>Ditch</span> <span>the</span> <span>Boring</span>
+          <span class="highlight">Business</span>
+          <span class="highlight">Trips!</span>
+        </h2>
+        <div class="corporate-subheading">
+          Rewrite Your Corporate Trip Story with Us!
+        </div>
+
+        <div class="corporate-description-wrapper">
+          <div class="corporate-description-text" id="contentBox">
+            <!-- Always visible paragraphs -->
+            <p>
+              Give your Corporate Trips a much-needed change and add a dash of adventure with WanderOn’s brand-new MICE Tourism. Say bye to those boring boardroom gatherings and say hello to an era where business meets adventure.
+            </p>
+            <p>
+              With WanderOn, it's not just business as usual; it's business mixed with an extraordinary dash of excitement! Let's turn those office outings into legendary tales of thrill and connections.
+            </p>
+
+            <!-- Hidden paragraphs inside .additional-content -->
+            <div class="additional-content">
+              <h2>What Is MICE Tourism?</h2>
+              <p>MICE Tourism stands for Meetings, Incentives, Conferences and Exhibitions...</p>
+              <h3>Meeting Trips</h3>
+              <p>Meeting Trips are professional meetings focused on business objectives...</p>
+              <h3>Incentive Tourism</h3>
+              <p>Incentive Tourism is a motivational tool used by businesses...</p>
+              <h3>Conference Trips</h3>
+              <p>Conference Trips are large-scale gatherings aimed at knowledge sharing...</p>
+              <h3>Exhibition Trips</h3>
+              <p>Exhibition Trips in MICE Tourism involve travelling to expos and industry exhibitions...</p>
+              <h2>Why You Should Opt For MICE Tourism?</h2>
+              <p><strong>1. Fosters Innovation:</strong> New environments inspire creativity and fresh ideas.</p>
+              <p><strong>2. Boosts Morale:</strong> Travel incentives reward effort and build loyalty.</p>
+              <p><strong>3. Team Building:</strong> Shared experiences improve collaboration and trust.</p>
+              <p><strong>4. Professional Growth:</strong> Events provide skills and insights employees bring back to work.</p>
+              <p><strong>5. Balance:</strong> Work + leisure reduces burnout and increases satisfaction.</p>
+              <p><strong>6. Networking:</strong> Meet new clients, vendors, and industry peers.</p>
+              <p><strong>7. Global Exposure:</strong> Learn new cultures and expand business vision.</p>
+              <h2>Our MICE Travel Services</h2>
+              <p><strong>1. Personalised Itineraries:</strong> Every trip tailored to your company culture and goals.</p>
+              <p><strong>2. Expert Planning:</strong> From destination to logistics, we handle everything.</p>
+              <p><strong>3. 24x7 Support:</strong> Dedicated team always ready to assist.</p>
+              <p><strong>4. Visa Help:</strong> Fast-tracked documentation for all attendees.</p>
+              <p><strong>5. Trip Media:</strong> Capture your journey with our photo & video team.</p>
+              <h2>Clients We've Worked With</h2>
+              <p><strong>1. Japan For High Level:</strong> Coordinated a multi-national seminar for 200+ delegates.</p>
+              <p><strong>2. Spiti Valley For TVS:</strong> Adventurous outing that boosted inter-department bonding.</p>
+              <p><strong>3. Paytm:</strong> Multi-location retreats across India for internal training and fun.</p>
+              <p>MICE Tourism isn't just about travel — it’s about business evolution through experience.</p>
+            </div>
+          </div>
+
+          <span id="toggleButton" class="read-more-button">Read More...</span>
+        </div>
+      </div>
+
+      <div class="corporate-video-section">
+        <img src="../assets/iframeImage.webp" alt="Corporate Group" class="corporate-video-frame">
+      </div>
+    </div>
+
+    <div class="corporate-enquire-button-wrapper">
+      <button class="corporate-enquire-button">Enquire Now</button>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById("toggleButton");
+    const contentBox = document.getElementById("contentBox");
+
+    toggleBtn.addEventListener("click", () => {
+      contentBox.classList.toggle("expanded");
+      toggleBtn.textContent = contentBox.classList.contains("expanded")
+        ? "Read Less..."
+        : "Read More...";
+    });
+  </script>
+</body>
+</html>

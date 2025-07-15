@@ -1,0 +1,130 @@
+
+.Our-Team-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.Our-Team-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.team-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.team-card {
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  min-width: 280px;
+  max-width: 300px;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.team-img {
+  padding: 1.5rem;
+}
+
+.team-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.team-designation {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.social-media-container img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-media-container img:hover {
+  transform: scale(1.1);
+}
+
+.about-team {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  padding: 0 1rem 1.5rem;
+  text-align: left;
+}
+
+.about-team::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f9b420;
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+/* 📱 Mobile: horizontal scroll */
+@media (max-width: 768px) {
+  .team-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .team-card {
+    flex: 0 0 auto;
+    width: 85%;
+    max-width: 320px;
+    scroll-snap-align: center;
+    margin-left: 1rem;
+  }
+
+  .about-team {
+    text-align: center;
+  }
+
+  /* Optional: hide scrollbar */
+  .team-card-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .team-card-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

@@ -1,0 +1,18 @@
+/* Add this button style to your shared CSS file */
+.exploreButton {
+  position: inherit;
+  background: #fff;
+  border: 1.5px solid rgb(1, 95, 116);
+  border-radius: 7px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.2px;
+  line-height: 27px;
+  width: 164px;
+  height: 51px;
+  color: rgb(1, 95, 116);
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

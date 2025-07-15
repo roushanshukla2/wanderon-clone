@@ -1,0 +1,163 @@
+/* === Container === */
+.International-Best-Of-section-container {
+  padding: 30px 5%;
+}
+
+.International-Best-Of-section-container h2 {
+  color: rgb(1, 95, 116);
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* === Carousel Layout === */
+.International-Best-Of-carousel-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 60px;
+  flex-wrap: nowrap;
+}
+
+/* === Arrow Buttons === */
+.International-Best-Of-arrow {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.International-Best-Of-arrow:hover {
+  background-color: #0097a7;
+}
+
+.International-Best-Of-arrow.left {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.International-Best-Of-arrow.right {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* === Scroll Wrapper === */
+.International-Best-Of-carousel-wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex-grow: 1;
+}
+
+.International-Best-Of-carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* === Card Row === */
+.International-Best-Of-card-row {
+  display: flex;
+  gap: 20px;
+  min-width: fit-content;
+  padding: 10px 0;
+}
+
+/* === Cards === */
+.International-Best-Of-trip-card {
+  position: relative;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.International-Best-Of-trip-card:hover {
+  transform: translateY(-6px);
+}
+
+.International-Best-Of-trip-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.International-Best-Of-trip-card::before {
+  content: attr(data-price);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ffe600;
+  color: #222;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 14px;
+  z-index: 2;
+}
+
+/* === Card Details === */
+.International-Best-Of-trip-details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+  padding: 16px;
+}
+
+.International-Best-Of-trip-details h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.International-Best-Of-trip-details p {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #ddd;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 768px) {
+  .International-Best-Of-trip-card {
+    width: 240px;
+  }
+
+  .International-Best-Of-section-container h2 {
+    font-size: 32px;
+  }
+
+  .International-Best-Of-arrow {
+    display: none;
+  }
+
+  .International-Best-Of-carousel-layout {
+    flex-direction: column;
+  }
+
+  .International-Best-Of-card-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+  .International-Best-Of-card-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

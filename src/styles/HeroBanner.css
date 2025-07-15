@@ -1,0 +1,218 @@
+/* ========== Common Banner Styles ========== */
+.international-banner-wrapper,
+.india-banner-wrapper,
+.honeymoon-banner-wrapper,
+.weekend-banner-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+  color: white;
+  margin-top: 120px;
+}
+
+/* ========== Specific Backgrounds ========== */
+.international-banner-wrapper {
+  background: url('../assets/international_trip_banner.webp') no-repeat center center/cover;
+}
+
+.india-banner-wrapper {
+  background: url('../assets/spiti-valley-cover.webp') no-repeat center center/cover;
+}
+
+.honeymoon-banner-wrapper {
+    background: url('../assets/honeymoon-cover.webp') no-repeat center center/cover;
+}
+
+.weekend-banner-wrapper {
+  background: url('../assets/weekend-cover.webp') no-repeat center center/cover;
+}
+
+/* ========== Shared Banner Content Layout ========== */
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1350px;
+}
+
+/* Centered layout for simple banners */
+.centered-banner-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ========== Text Section ========== */
+.text-container {
+  max-width: 100%;
+  padding-right: 40px;
+}
+
+.centered-text-container {
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.text-container h2,
+.centered-text-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  border-left: 6px solid yellow;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.text-container .bg-yellow,
+.centered-text-container .bg-yellow {
+  background: yellow;
+  color: black;
+  padding: 10px 20px;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* ========== Callback Form ========== */
+.callback-form {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #00bcd4;
+}
+
+.callback-form h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.callback-form .blue-text {
+  color: #00bcd4;
+  font-weight: bold;
+  display: inline;
+}
+
+.callback-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.callback-form input {
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.callback-form input:focus {
+  border-color: #00bcd4;
+}
+
+.callback-form button {
+  background: #ffe600;
+  color: #000;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.callback-form button:hover {
+  transform: scale(1.03);
+}
+
+/* ========== Review Section ========== */
+.review-count-wrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+}
+
+.review img {
+  height: 36px;
+  width: auto;
+}
+
+.review .rating {
+  font-weight: bold;
+  font-size: 17px;
+  color: #ffe600;
+}
+
+.review .count {
+  font-size: 14px;
+  color: white;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 1100px) {
+  .banner-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .international-banner-wrapper,
+  .india-banner-wrapper,
+  .honeymoon-banner-wrapper,
+  .weekend-banner-wrapper {
+    margin-top: 4% !important;
+  }
+
+  .text-container h2,
+  .centered-text-container h2 {
+    font-size: 28px;
+  }
+
+  .callback-form {
+    display: none;
+  }
+
+  .review-count-wrapper {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+/* ========== Utility ========== */
+.international-review-count {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.font-light {
+  font-weight: lighter;
+}

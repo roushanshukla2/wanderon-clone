@@ -1,0 +1,54 @@
+/* src/styles/InternationalBanner.css */
+
+.international-static-banner {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.static-banner {
+  width: 100%;
+  /* max-width: 1046px; */
+  aspect-ratio: 1046 / 300;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  display: block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Optional: Hover effect */
+.static-banner:hover {
+  transform: scale(1.01);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .static-banner {
+    aspect-ratio: 1046 / 320;
+  }
+}
+
+@media (max-width: 768px) {
+  .international-static-banner {
+    padding: 0 3%;
+  }
+
+  .static-banner {
+    aspect-ratio: 1046 / 350;
+  }
+}
+
+@media (max-width: 480px) {
+  .static-banner {
+    aspect-ratio: 1046 / 400;
+  }
+}

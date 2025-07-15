@@ -1,0 +1,255 @@
+
+      .corporate-parent-container {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .corporate-clients-review-container {
+        padding: 0px 0px;
+        text-align: center;
+      }
+
+      .corporate-clients-review-container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+      }
+
+      .corporate-container {
+        display: flex;
+        flex-wrap: nowrap;
+        /* max-width: 1200px; */
+        margin: auto;
+        background: url(https://images.wanderon.in/mice-images-collection/our-clients/client-bg-1)
+          center center / cover no-repeat;
+        border-radius: 16px;
+        padding: 100px;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .corporate-container-left {
+        flex: 0 1 400px;
+        text-align: left;
+      }
+
+      .corporate-container-left img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .corporate-container-left h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      .corporate-container-left p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #ffffff;
+      }
+
+      .corporate-button-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .corporate-location-container,
+      .corporate-visitor-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #12395b;
+        padding: 10px 15px;
+        border-radius: 10px;
+      }
+
+      .corporate-location-container svg,
+      .corporate-visitor-container svg {
+        fill: #fff;
+      }
+
+      .corporate-location-container h4,
+      .corporate-visitor-container h4 {
+        margin: 0;
+        font-size: 0.85rem;
+        color: #ccc;
+      }
+
+      .corporate-location-container p,
+      .corporate-visitor-container p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .corporate-container-right {
+        display: flex;
+        justify-content: end;
+        width: 60%;
+      }
+
+      .corporate-container-right iframe {
+        width: 60%;
+        height: 315px;
+        border-radius: 12px;
+        border: none;
+      }
+
+      @media (max-width: 768px) {
+        .corporate-container {
+          flex-direction: column;
+          flex-wrap: wrap;
+          padding: 20px;
+          height: 60vh;
+        }
+        .corporate-container-right iframe {
+            position: relative;
+            bottom: 40px;
+        }
+
+        .corporate-container-left,
+        .corporate-container-right {
+          text-align: center;
+          justify-content: center;
+          width: 100%;
+          flex:0;
+        }
+
+        .corporate-button-container {
+          justify-content: center;
+        }
+      }
+
+      /* test code */
+      .corporate-overlaping-container {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        top: -85px;
+      }
+
+      .corporate-overlaping-container h1 {
+        color: #2c3e50;
+        font-size: 24px;
+      }
+
+      .corporate-overlaping-container h2 {
+        color: #34495e;
+        font-size: 20px;
+      }
+
+      .corporate-overlaping-date {
+        color: #7f8c8d;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .corporate-overlaping-content {
+        font-size: 16px;
+        color: #2c3e50;
+        line-height: 1.6;
+      }
+
+      #more {
+        display: none;
+      }
+
+      .corporate-overlaping-button {
+        margin-top: 10px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .corporate-overlaping-button:hover {
+        background-color: #2980b9;
+      }
+
+      .corporate-static-banner-wrapper {
+      margin: 90px 0;
+      /* width: calc(100%); */
+      border-radius: 30px;
+      aspect-ratio: 1266 / 340;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background:
+        url(https://images.wanderon.in/mice-images-collection/cta-bg) center center / cover no-repeat, linear-gradient(rgb(1, 175, 209) 0%, rgb(0, 111, 136) 100%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .corporate-static-banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 700px;
+      padding: 0 20px;
+    }
+
+    .corporate-static-banner h2 {
+      font-size: 2rem;
+      margin: 0 0 10px;
+    }
+
+    .corporate-static-banner p {
+      font-size: 1.1rem;
+      margin: 0 0 20px;
+    }
+
+    .contact-me-now {
+      display: inline-flex;
+      padding: 12px 60px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      color: rgba(12, 12, 12, 0.9);
+      background-color: #fee60b;
+      border: none;
+      border-radius: 45px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-me-now:hover {
+      background-color: #ffd500;
+    }
+
+    @media (max-width: 768px) {
+      .corporate-static-banner-wrapper {
+        aspect-ratio: auto;
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      .corporate-static-banner h2 {
+        font-size: 1.6rem;
+      }
+
+      .corporate-static-banner p {
+        font-size: 1rem;
+      }
+
+      .contact-me-now {
+        padding: 10px 40px;
+        font-size: 15px;
+      }
+    }

@@ -1,0 +1,139 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    .BenefitsPageContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .BenefitsPageHeader h3 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .BenefitsPageCardContainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .CardContainer {
+      position: relative;
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      height: 300px;
+    }
+
+    .CardContainer img {
+      width: 70%;
+      height: 100%;
+      object-fit: fill;
+      display: block;
+    }
+
+    .CardContainer h4,
+    .CardContainer p {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      z-index: 2;
+    }
+
+    .CardContainer h4 {
+      top: 10%;
+      font-size: 1.25rem;
+      margin: 0;
+      color: #01afd1;
+    }
+
+    .CardContainer p {
+      top: 25%;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin: 0;
+      color: #494949;
+    }
+
+    /* Mobile view styles */
+    @media (max-width: 1080px) {
+      .BenefitsPageCardContainer {
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+        overflow: hidden;
+        position: relative;
+        justify-content: space-around;
+      }
+
+      .CardContainer {
+        min-width: 100%;
+      }
+
+      .arrow-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+      }
+
+      .arrow-btn {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .arrow-left {
+        left: -20px;
+      }
+
+      .arrow-right {
+        right: -20px;
+      }
+
+      .dots-container {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 20px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .dot.active {
+        background-color: #01afd1;
+      }
+    }
+  

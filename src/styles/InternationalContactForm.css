@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.international-contact-wrapper {
+  padding: 50px 15%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.international-contact-card {
+  width: 50%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.international-contact-form h2 {
+  font-size: 28px;
+  color: #015f74;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.international-contact-form p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.international-form-group {
+  margin-bottom: 20px;
+}
+
+.international-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #222;
+  font-weight: 500;
+}
+
+.international-form-group input,
+.international-form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.international-error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+
+.international-submit-btn {
+  padding: 12px 28px;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.international-submit-btn:hover {
+  background-color: #0097a7;
+}
+
+@media (max-width: 768px) {
+  .international-contact-card {
+    width: 100%;
+    padding: 30px;
+  }
+}

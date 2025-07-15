@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beyond Ordinary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .beyond-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .beyond-section h2 {
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .beyond-section h2 strong {
+      color: #00b4d8;
+      font-weight: 700;
+    }
+
+    .beyond-section p {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .beyond-card {
+      padding: 30px 20px;
+      border-radius: 25px;
+      color: #fff;
+      text-align: left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .beyond-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .beyond-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .beyond-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .beyond-description {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    /* Background colors for each card */
+    .red    { background: url(../assets/byo-bg1.svg); background-size: cover; }
+    .blue   { background: url(../assets/byo-bg2.svg); background-size: cover; }
+    .green  { background: url(../assets/byo-bg3.svg); background-size: cover; }
+    .orange { background: url(../assets/byo-bg4.svg); background-size: cover; }
+    .teal   { background: url(../assets/byo-bg5.svg); background-size: cover; }
+
+    .purple { background: url(../assets/byo-bg6.svg); background-size: cover;}
+
+    .beyond-card-heading{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="beyond-section">
+    <h2>Beyond <strong>Ordinary?</strong></h2>
+    <p>We're firm believers that business trips should be anything but ordinary.</p>
+
+    <div class="card-grid">
+      <div class="beyond-card red">
+        <div class="beyond-card-heading">
+          <img src="../assets/byo-icon-1.svg" alt="icon" class="beyond-icon" />
+          <div class="beyond-title">End to End Content</div>
+        </div>
+        <div class="beyond-description">
+          We've got everything you need from start to finish – the best places to stay, cool guides, smooth rides, and more. Your trip's in good hands!
+        </div>
+      </div>
+
+      <div class="beyond-card blue">
+        <div class="beyond-card-heading">
+          <img src="../assets/byo-icon-2.svg" alt="icon" class="beyond-icon" />
+          <div class="beyond-title">No Visa Worries</div>
+        </div>
+        <div class="beyond-description">
+          You focus on fun planning, and we'll handle all the boring visa stuff.
+        </div>
+      </div>
+
+      <div class="beyond-card green">
+        <div class="beyond-card-heading">
+          <img src="../assets/byo-icon-3.svg" alt="icon" class="beyond-icon" />
+          <div class="beyond-title">Dreamy Stays & Flights</div>
+        </div>
+        <div class="beyond-description">
+          Getting to your dream spots is a breeze. We'll make sure you stay in awesome places and catch your flights without a hitch.
+        </div>
+      </div>
+
+      <div class="beyond-card orange">
+        <div class="beyond-card-heading">
+          <img src="../assets/byo-icon-4.svg" alt="icon" class="beyond-icon" />
+          <div class="beyond-title">Local Buddies</div>
+        </div>
+        <div class="beyond-description">
+          Our buddies on the ground will help you explore the heart of every place you visit.
+        </div>
+      </div>
+
+      <div class="beyond-card teal">
+        <div class="beyond-card-heading">
+          <img src="../assets/byo-icon-5.svg" alt="icon" class="beyond-icon" />
+          <div class="beyond-title">Picture-Perfect Moments</div>
+        </div>
+        <div class="beyond-description">
+          We've got a team that can help you snap those amazing pics you'll cherish forever.
+        </div>
+      </div>
+
+      <div class="beyond-card purple">
+        <div class="beyond-card-heading">
+        <img src="../assets/byo-icon-6.svg" alt="icon" class="beyond-icon" />
+        <div class="beyond-title">Travel Magic Makers</div>
+        </div>
+        <div class="beyond-description">
+          We make sure your adventure is not just hassle-free but sprinkled with the pixie dust of unforgettable memories.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

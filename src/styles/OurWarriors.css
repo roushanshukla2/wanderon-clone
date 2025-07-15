@@ -1,0 +1,70 @@
+
+.our-warrior-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+.our-warrior-section-heading h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #222;
+}
+
+.our-warrior-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.our-warrior-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-warrior-card:hover {
+  transform: translateY(-6px);
+}
+
+.our-warrior-card img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.our-warrior-yellow-line {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #f9b420;
+  text-align: center;
+  position: relative;
+}
+
+.our-warrior-yellow-line::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f9b420;
+  margin: 0.7rem auto;
+  border-radius: 2px;
+}
+
+.our-warrior-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 1rem;
+}

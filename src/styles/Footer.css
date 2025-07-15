@@ -1,0 +1,156 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  border-top: #00B4D8 10px solid;
+}
+
+.footer-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+.link-content {
+  margin: 10px;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.accordion-title::after {
+  content: '▾';
+  transition: transform 0.3s;
+}
+
+.accordion-title.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion-links {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-links.open {
+  max-height: 1000px;
+}
+
+.accordion-links p a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.accordion-links p a:hover {
+  color: #fff;
+}
+
+.line {
+  height: 1px;
+  background-color: #444;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+footer h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+.footer-icon-container {
+  text-align: center;
+  margin: 0 50%;
+  transform: translateX(-50%);
+  display: flex;;
+  justify-content: center;
+}
+
+.footer-icon-container svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.footer-icon-container svg:hover {
+  transform: scale(1.1);
+}
+
+footer img[alt="footer-image"] {
+  display: block;
+  margin: 30px auto 10px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1080px) {
+  .footer-link-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .link-content a {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1081px) {
+  .accordion-links {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .accordion-title::after {
+    display: none;
+  }
+
+  .accordion-title {
+    cursor: default;
+  }
+}

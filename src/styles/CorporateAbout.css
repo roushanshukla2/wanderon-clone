@@ -1,0 +1,98 @@
+
+
+  .corporate-about-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .corporate-about-content-heading h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+    text-align: left;
+    color: #01afd1;
+  }
+
+  .corporate-about-content-heading h2 strong,
+  .corporate-about-content-heading h2 .highlight {
+    font-weight: 700;
+  }
+
+  .corporate-about-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 0 20px;
+  }
+
+  .corporate-about-card-container-grid4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    padding: 0 10%;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 70%;
+    height: 350px;
+    /* margin-left: 50%; */
+    /* transform: -50%;   */
+    
+  }
+
+  .corporate-about-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+  }
+
+  .corporate-about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .corporate-about-card-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .corporate-about-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .corporate-about-card-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    .corporate-about-content-heading h2 {
+      font-size: 2rem;
+    }
+    
+
+    .corporate-about-card {
+      padding: 20px 15px;
+    }
+  }
+  @media (max-width:1080px) {
+    .corporate-about-card-container-grid4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .superpower-card-container {
+      grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+  }
+  .color {
+    color: #01AFD1 !important;
+  }
